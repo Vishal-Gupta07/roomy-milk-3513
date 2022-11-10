@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Mail</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: wheat;
+        }
+        #Topbar{
+            background-color: rgb(37, 27, 43);
+            text-align: center;
+            height: 32px;
+            padding: 15px;
+        }
+        #Topbar>a{
+            color: white;
+            font-size: 20px;
+            font-family: 'Sawarabi Gothic', sans-serif;
+            text-decoration: none;
+        }
+        #Topbar>a>span{
+            color: wheat;
+            text-decoration: underline;
+        }
+        #Topbar>a>samp{
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        #Navbar{
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #Navbar>div{
+            background-color: yellow;
+        }
+        #Navbar>div>a>img{
+            height: 60px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        #Navbar>div:nth-child(2){
+            margin-left: 10%;
+            /* color: yellow; */
+        }
+        #Navbar button{
+            width: 90px;
+            padding: 10px;
+            margin-top: 13px;
+            margin-left: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            font-size: 15px;
+        }
+        #Navbar button:nth-child(2){
+            background-color: lightgreen;
+            border: none;
+            color: white;
+        }
+        #menu{
+            border: 1px solid red;
+            width: 33%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #menu ul {
+            list-style: none;
+            position: relative;
+            margin: 0;
+            padding: 15px 0;
+            float: left;
+            width: 100%;
+            color: rgb(57, 39, 39);
+        }
+        #menu ul a{
+            color: rgb(57, 39, 39);
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 32px;
+            display: block;
+        }
+        #menu>ul>li{
+            float: left;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            margin-left: 45px;
+        }
+        /* #menu ul li:hover{
+            color: aqua;
+        } */
+        #menu ul ul{
+            position: absolute;
+            background: #fff;
+            /* top: 100%; */
+            left: 0px;
+            display: none;
+        }
+        #menu ul ul li{
+            font: none;
+            width: 150px;
+            border-left: 0px solid #656565;
+        }
+        #menu ul ul li:hover{
+            border-left: 0px solid #656565;
+        }
+        #menu ul li:hover > ul{
+            display: block;
+        }
+        #container-I{
+            border: 2px solid red;
+            height: 450px;
+        }
+        #container-II{
+            border: 2x solid black;
+            height: 50px;
+            background-color: black;
+        }
+        #container-III{
+            border: 2x solid red;
+            height: 500px;
+            background-color: red;
+        }
+        #container-V{
+            border: 5x solid blue;
+            height: 600px;
+            background-color: blue;
+        }
+        #container-VI{
+            border: 5x solid red;
+            height: 600px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="Topbar">
+        <a href="#">Stand with Ukraine <samp>UA</samp> <span>Donate to support</span></a>
+    </div>
+    <div id="Navbar">
+            <div>
+                <a href="index.html"><img src="SKy_Magic1.png" alt=""></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <a href="#">Email Testing </a>
+                        <ul id="VV">
+                            <li><div id="hh"><a href="#"><p><span>Sub Menu</span> Sub Menu 1</p></div></li>
+                            <li><div id="hh"><a href="#"><p><span>Sub Menu</span> Sub Menu 1</p></div></li>
+                            <li><div id="hh"><a href="#"><p><span>Sub Menu</span> Sub Menu 1</p></div></li>
+                            <li><div id="hh"><a href="#"><p><span>Sub Menu</span> Sub Menu 1</p></div></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Email API</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li>
+                        <a href="#">Resources</a>
+                        <ul>
+                            <li><a href="#">Sub Menu 1</a></li>
+                            <li><a href="#">Sub Menu 2</a></li>
+                            <li><a href="#">Sub Menu 3</a></li>
+                            <li><a href="#">Sub Menu 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button>Log in</button>
+                <button>Sign Up</button>
+            </div>
+    </div>
+    <div id="container">
+        <div id="container-I">
+        </div>
+        <div id="container-II"></div>
+        <div id="container-III"></div>
+        <div id="container-V"></div>
+        <div id="container-VI"></div>
+    </div>
+</body>
+</html>
