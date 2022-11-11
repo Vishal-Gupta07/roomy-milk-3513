@@ -100,8 +100,10 @@
         #menu ul ul{
             position: absolute;
             background: #fff;
+            width: 300px;
             /* top: 100%; */
-            left: 0px;
+            /* right: 20%; */
+            left: -100px;
             display: none;
         }
         #menu ul ul li{
@@ -118,21 +120,77 @@
         #container-I{
             border: 2px solid red;
             height: 450px;
+            /* align-items: center; */
+            text-align: center;
+            padding-top: 10px;
+        }
+        #container-I>h1{
+            font-size: 50px;
+            padding-top: 20px;
+        }
+        #container-I>p{
+            padding-top: 50px;
+            font-size: 20px;
+            /* letter-spacing: 2px; */
+            /* word-spacing: 5px; */
+            font-weight: bold;
+        }
+        #container-I>button{
+            margin-top: 50px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: aquamarine;
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
         }
         #container-II{
             border: 2x solid black;
             height: 50px;
             background-color: black;
         }
+        #container-II>div{
+            margin-left: 30%;
+            padding: 5px;
+        }
         #container-III{
             border: 2x solid red;
-            height: 500px;
+            height: 475px;
             background-color: red;
         }
+        #container-III>img{
+            margin: auto;
+            margin-left: 20%;
+        }
+
         #container-V{
             border: 5x solid blue;
-            height: 600px;
+            height: 650px;
             background-color: blue;
+        }
+        #container-V>div:nth-child(1){
+            /* align-items: center; */
+            padding-top: 80px;
+            text-align: center;
+            color: white;
+        }
+        #container-V>div:nth-child(2){
+            display: grid;
+            border: 3px solid black;
+            width: 60%;
+            margin: auto;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 50px;
+        }
+        #conatainerDiv>div{
+            display: flex;
+            margin-top: 20px;
+        }
+        #conatainerDiv>div>div>img{
+            padding: 10px;
+        }
+        #conatainerDiv>div>:nth-child(2)>h3{
+            padding-bottom: 10px;
         }
         #container-VI{
             border: 5x solid red;
@@ -181,10 +239,96 @@
     </div>
     <div id="container">
         <div id="container-I">
+            <h1>Email Sandbox</h1>
+            <p>Capture SMTP traffic from staging and dev environments</p>
+                <!-- <br> -->
+
+                <p> Automate test flows and scenarios with flexible API</p>
+                <!-- <br> -->
+                <p> Analyze email content for spam score and validate HTML/CSS
+            </p>
+            <button>Sign Up For Free</button>
         </div>
-        <div id="container-II"></div>
-        <div id="container-III"></div>
-        <div id="container-V"></div>
+        <div id="container-II">
+            <div>
+                <img src="https://mailtrap.io/wp-content/uploads/2021/04/Rails.svg" alt="">
+                <img src="https://mailtrap.io/wp-content/uploads/2021/04/Rails.svg" alt="">
+                <img src="https://mailtrap.io/wp-content/uploads/2021/04/NET.svg" alt="">
+                <img src="https://mailtrap.io/wp-content/uploads/2021/04/NET.svg" alt="">
+                <img src="https://mailtrap.io/wp-content/uploads/2021/04/Laravel.svg" alt="">
+            </div>
+        </div>
+        <div id="container-III">
+            <img src="https://mailtrap.io/wp-content/uploads/2021/05/img__homepage-964x574.png" alt="">
+        </div>
+        <div id="container-V">
+            <div>
+                <h2>Email testing challenges that</h2>
+                <h2>Mailtrap Sandbox solves</h2>
+            </div>
+            <div id="conatainerDiv">
+                <div>
+                    <div >
+                        <img src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Configure your testing environment in 5 minutes</h3>
+                        <p>Each account comes with an individual testing</p>
+                        <p>environment. Integrate it with your app in just a few clicks.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Configure your testing environment in 5 minutes</h3>
+                        <p>Each account comes with an individual testing</p>
+                        <p>environment. Integrate it with your app in just a few clicks.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Configure your testing environment in 5 minutes</h3>
+                        <p>Each account comes with an individual testing</p>
+                        <p>environment. Integrate it with your app in just a few clicks.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Configure your testing environment in 5 minutes</h3>
+                        <p>Each account comes with an individual testing</p>
+                        <p>environment. Integrate it with your app in just a few clicks.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Configure your testing environment in 5 minutes</h3>
+                        <p>Each account comes with an individual testing</p>
+                        <p>environment. Integrate it with your app in just a few clicks.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://mailtrap.io/wp-content/uploads/2021/03/icon4.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Configure your testing environment in 5 minutes</h3>
+                        <p>Each account comes with an individual testing</p>
+                        <p>environment. Integrate it with your app in just a few clicks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="container-VI"></div>
     </div>
 </body>
